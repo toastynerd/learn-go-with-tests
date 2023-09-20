@@ -6,22 +6,25 @@ jobs:
     container: golang:latest
     steps:
       - name: Checkout to master
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Builds the run time
         run: make build
+        working-directory: './hello_world'
   run:
     runs-on: ubuntu-latest
     container: golang:latest
     steps:
      - name: Checkout to master
-       uses: actions/checkout@master
+       uses: actions/checkout@main
      - name: runs the program
        run: make run
+       working-directory: './hello_world'
   test:
     runs-on: ubuntu-latest
     container: golang:latest
     steps:
       - name: checkout to master
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: runs the tests
         run: make test
+        working-directory: './hello_world'
