@@ -1,0 +1,27 @@
+name: hello-world
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: golang:latest
+    steps:
+      - name: Checkout to master
+        uses: actions/checkout@master
+      - name: Builds the run time
+        run: make build
+  run:
+    runs-on: ubuntu-latest
+    container: golang:latest
+    steps:
+     - name: Checkout to master
+       uses: actions/checkout@master
+     - name: runs the program
+       run: make run
+  test:
+    runs-on: ubuntu-latest
+    container: golang:latest
+    steps:
+      - name: checkout to master
+        uses: actions/checkout@master
+      - name: runs the tests
+        run: make test
