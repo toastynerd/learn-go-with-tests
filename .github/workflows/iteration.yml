@@ -1,0 +1,11 @@
+name: iteration
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container: golang:latest
+    steps:
+      - name: checkout main
+        uses: actoins/checkout@main
+      - name: runs make test
+        run: make -C iteration test
