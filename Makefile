@@ -1,4 +1,4 @@
-FOLDERS = hello_world integers
+FOLDERS = hello_world integers array_and_slice
 
 testall:
 	for dir in $(FOLDERS); do \

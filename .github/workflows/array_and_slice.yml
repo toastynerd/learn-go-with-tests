@@ -1,4 +1,4 @@
-name: iteration
+name: array_and_slice
 on: push
 jobs:
   test:
@@ -7,5 +7,5 @@ jobs:
     steps:
       - name: checkout main
         uses: actions/checkout@main
-      - name: runs make test
-        run: make -C iteration test
+      - name: run make test
+        run: make -C array_and_slice test
