@@ -1,4 +1,6 @@
 # Learn Go with Tests
+![test lib](https://github.com/toastynerd/learn-go-with-tests/actions/workflows/test_lib.yml/badge.svg)
+
 ![hello world](https://github.com/toastynerd/learn-go-with-tests/actions/workflows/hello_world.yml/badge.svg)
 ![integers](https://github.com/toastynerd/learn-go-with-tests/actions/workflows/integers.yml/badge.svg)
 ![iteration](https://github.com/toastynerd/learn-go-with-tests/actions/workflows/iteration.yml/badge.svg)
